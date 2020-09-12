@@ -1,5 +1,8 @@
 provider "aws" {
-  region     = "us-west-2"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
+    region  = "ap-southeast-1"
+}
+
+resource "aws_instance" "myec2" {
+    ami = "ami-0b1e534a4ff9019e0"
+    instance_type = "t2.micro"
 }
