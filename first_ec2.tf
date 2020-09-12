@@ -1,7 +1,6 @@
 provider "aws" {
     region  = "ap-southeast-1"
-    version             = "~> 2.12.0"
-
+    required_version = "~> 0.12.20"
 }
 
 resource "aws_instance" "myec2" {
